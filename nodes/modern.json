@@ -1,0 +1,12 @@
+{
+  "run_list": [
+    "recipe[apache]",
+    "recipe[rpmupdate]",
+    "recipe[nginx]",
+    "recipe[php]",
+    "recipe[mysql]"
+  ],
+  "automatic": {
+    "ipaddress": "modern"
+  }
+}
