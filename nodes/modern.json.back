@@ -1,7 +1,8 @@
 {
   "run_list": [
-    "recipe[rpmupdate]",
     "recipe[apache]",
+    "recipe[rpmupdate]",
+    "recipe[nginx]",
     "recipe[php]",
     "recipe[mysql]",
     "recipe[symfony]"

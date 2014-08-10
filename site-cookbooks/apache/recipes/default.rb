@@ -8,19 +8,11 @@
 #
 
 
-#package "httpd" do
-#  action :install
-#end
+package "httpd" do
+  action :install
+end
 
-#service "httpd" do
-#  supports :status => true, :restart => true, :reload => true
-#  action [ :enable, :start ]
-#end
-
-
-bash "httpd_remove" do
-  code <<-EOC
-    yum -y remove httpd
-  EOC
-#  not_if 'yum list installed | grep -v "httpd"'
+service "httpd" do
+  supports :status => true, :restart => true, :reload => true
+  action [ :enable, :start ]
 end
