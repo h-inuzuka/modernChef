@@ -1,10 +1,8 @@
 {
   "run_list": [
-    "recipe[rpmupdate]",
     "recipe[apache]",
     "recipe[php]",
-    "recipe[mysql]",
-    "recipe[symfony]"
+    "recipe[mysql]"
   ],
   "automatic": {
     "ipaddress": "modern"
